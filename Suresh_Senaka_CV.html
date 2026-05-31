@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suresh Senaka - CV</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #7c3aed;
+      --line: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 900px;
+      margin: 24px auto;
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+    }
+    h1 { margin: 0; font-size: 2rem; }
+    .subtitle { color: var(--accent); font-weight: 700; margin-top: 6px; }
+    .contact p, .section p, li { color: var(--muted); }
+    .section { margin-bottom: 18px; }
+    .section h2 {
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 10px;
+    }
+    ul { margin: 0; padding-left: 18px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #fff;
+    }
+    .label { font-weight: 700; color: var(--text); }
+    .muted { color: var(--muted); }
+    .small { font-size: 0.92rem; }
+    .project-title { font-weight: 700; margin-bottom: 4px; }
+    .footer-note {
+      margin-top: 18px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+    }
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+    }
+    @media (max-width: 720px) {
+      .header, .grid { grid-template-columns: 1fr; display: grid; }
+      .header { display: grid; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>Suresh Senaka</h1>
+        <div class="subtitle">Intern Software Engineer</div>
+        <p class="muted small">Information Technology undergraduate at SLIIT seeking a Software Engineering internship.</p>
+      </div>
+      <div class="contact small">
+        <p><span class="label">Email:</span> Sureshsenaka76@gmail.com</p>
+        <p><span class="label">Phone:</span> 0740 723 511</p>
+        <p><span class="label">Location:</span> Bathgamgoda, Pelmadulla, Sri Lanka</p>
+        <p><span class="label">Reference:</span> Dr. Dinuka Wijendra - dinuka.w@sliit.lk</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Profile</h2>
+      <p>
+        I am an Information Technology undergraduate with a strong foundation in JavaScript,
+        RESTful APIs, database management, and full-stack web development. I enjoy collaborative
+        Agile environments and focus on clean code, scalable systems, and practical problem solving.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="card">
+        <div class="label">BSc (Hons) in Information Technology - SLIIT</div>
+        <div class="muted">2023 - Present</div>
+      </div>
+      <div class="card" style="margin-top:10px;">
+        <div class="label">GCE A/L - Physical Science Stream</div>
+        <div class="muted">Gankanda Central College | 2020 - 2022</div>
+      </div>
+      <div class="card" style="margin-top:10px;">
+        <div class="label">GCE O/L</div>
+        <div class="muted">R/Dharmaloka Maha Vidyalaya | 2013 - 2019</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><span class="label">Languages:</span> Java, JavaScript, PHP, SQL</div>
+        <div class="card"><span class="label">Frameworks:</span> React, Node.js, Express.js, REST APIs</div>
+        <div class="card"><span class="label">Databases:</span> MySQL, MongoDB, PostgreSQL</div>
+        <div class="card"><span class="label">Tools:</span> Git, GitHub, Postman, Agile/Scrum, OOP, Clean Code</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="project-title">DJ Booking Platform</div>
+        <div class="muted small">React.js, Node.js, Express.js, PostgreSQL</div>
+        <p class="small">A full-stack platform that connects clients with DJs across Sri Lanka for weddings, parties, and corporate functions.</p>
+      </div>
+      <div class="card" style="margin-top:10px;">
+        <div class="project-title">Online Business Management System</div>
+        <div class="muted small">React, Node.js, Express.js, MySQL</div>
+        <p class="small">A modular user management system with role-based access control for expenses, orders, payments, and inventory.</p>
+      </div>
+      <div class="card" style="margin-top:10px;">
+        <div class="project-title">Mobile Phone Shop Management System</div>
+        <div class="muted small">React, Node.js, Express.js, MongoDB</div>
+        <p class="small">A barcode-driven POS and inventory system with customer/supplier management, discount handling, and printable receipts.</p>
+      </div>
+      <div class="card" style="margin-top:10px;">
+        <div class="project-title">Tourism Web Application - Go Ceylon</div>
+        <div class="muted small">React.js, Node.js, Express.js, MongoDB</div>
+        <p class="small">A travel platform with attraction-based tour guides, an AI chatbot, RFID tracking, and package management.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Certificates</h2>
+      <ul>
+        <li>Java (Basic) - HackerRank</li>
+        <li>SQL (Intermediate) - HackerRank</li>
+        <li>Front End Web Development - University of Moratuwa</li>
+      </ul>
+    </section>
+
+    <div class="footer-note">
+      This CV is provided as a downloadable HTML file. Open it in a browser and print to PDF if needed.
+    </div>
+  </main>
+</body>
+</html>
