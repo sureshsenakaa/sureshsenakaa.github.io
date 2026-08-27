@@ -258,6 +258,24 @@
     .cert-name { font-size:0.92rem; font-weight:600; color:var(--text); }
     .cert-issuer { font-size:0.75rem; color:var(--text-muted); margin-top:3px; }
 
+        /* ======= EXPERIENCE ======= */
+    .exp-grid { display:flex; flex-direction:column; gap:1.5rem; margin-top:2rem; }
+    .exp-card {
+      padding:1.75rem; border-radius:16px;
+      display:flex; flex-direction:column; gap:0.5rem;
+      transition:transform 0.3s, box-shadow 0.3s;
+      background:#fff; border:1px solid rgba(124,58,237,0.08);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+    .exp-card:hover { transform:translateY(-4px); box-shadow:0 12px 35px rgba(124,58,237,0.15); }
+    .exp-header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .exp-title { font-size:1.1rem; font-weight:700; color:var(--text); }
+    .exp-company { font-size:0.9rem; font-weight:600; color:var(--accent); }
+    .exp-date { font-size:0.85rem; color:var(--text-muted); font-family: 'Fira Code', monospace; }
+    .exp-desc { font-size:0.9rem; color:var(--text-muted); line-height:1.6; margin-top:0.5rem; }
+    .exp-desc ul { padding-left: 1.2rem; margin-top:0.5rem; }
+    .exp-desc li { margin-bottom: 0.3rem; }
+
     /* ======= CONTACT ======= */
     .contact-wrapper { display:grid; grid-template-columns:1fr 1.4fr; gap:3rem; align-items:start; }
     .contact-info { display:flex; flex-direction:column; gap:1.1rem; }
@@ -333,6 +351,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -348,10 +367,9 @@
       <div>
         <p class="hero-greeting">// Hello, World! 👋</p>
         <h1 class="hero-name">Hi, I'm<br><span class="gradient-text">Suresh Senaka</span></h1>
-        <p class="hero-role">Intern Software Engineer &amp; Full Stack Developer</p>
+        <p class="hero-role">Lead Full Stack Engineer &amp; Tech Entrepreneur</p>
         <p class="hero-desc">
-          IT undergraduate at SLIIT with hands-on experience building full-stack web applications.
-          Passionate about clean code, scalable systems, and collaborative Agile development.
+          An innovative, self-taught Full Stack Software Engineer and Tech Entrepreneur with a proven track record of architecting, deploying, and monetizing scalable web applications. Passionate about problem-solving and transforming real-world challenges into efficient software solutions.
         </p>
         <div class="hero-socials">
           <a href="https://github.com/" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
@@ -364,9 +382,9 @@
           <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
         </div>
         <div class="stats-row">
-          <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Years Exp.</div></div>
-          <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Projects Built</div></div>
-          <div class="stat"><div class="stat-num">3</div><div class="stat-label">Certificates</div></div>
+          <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Years Domain Exp.</div></div>
+          <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Live SaaS Platforms</div></div>
+          <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Active Users</div></div>
         </div>
       </div>
 
@@ -381,9 +399,9 @@
           <div class="c-purple">const <span class="c-white">dev</span> = <span class="c-orange">{</span></div>
           <div style="padding-left:1.5rem">
             <div><span class="c-blue">name</span>: <span class="c-green">"Suresh Senaka"</span>,</div>
-            <div><span class="c-blue">role</span>: <span class="c-green">"Intern SE"</span>,</div>
+            <div><span class="c-blue">role</span>: <span class="c-green">"Lead FS Engineer"</span>,</div>
             <div><span class="c-blue">education</span>: <span class="c-green">"SLIIT IT"</span>,</div>
-            <div><span class="c-blue">stack</span>: [<span class="c-green">"Laravel"</span>, <span class="c-green">"Vue"</span>, <span class="c-green">"React"</span>],</div>
+            <div><span class="c-blue">stack</span>: [<span class="c-green">"React"</span>, <span class="c-green">"Node.js"</span>, <span class="c-green">"PostgreSQL"</span>],</div>
             <div><span class="c-blue">location</span>: <span class="c-green">"Sri Lanka 🇱🇰"</span>,</div>
             <div><span class="c-blue">available</span>: <span class="c-purple">true</span></div>
           </div>
@@ -404,17 +422,13 @@
     <div class="about-grid reveal">
       <div class="about-text">
         <p>
-          I'm <span class="highlight">Suresh Senaka</span>, an Information Technology undergraduate at
-          <span class="highlight">SLIIT</span> with a strong foundation in JavaScript, RESTful APIs, and
-          database management.
+          I'm <span class="highlight">Suresh Senaka</span>, an innovative, self-taught Full Stack Software Engineer and Tech Entrepreneur with a proven track record of architecting, deploying, and monetizing scalable web applications.
         </p>
         <p>
-          I'm currently pursuing my degree while actively building real-world full-stack applications
-          and sharpening my skills in modern web technologies.
+          Leveraging 3 years of domain experience in the entertainment industry, I have successfully bootstrapped and launched multiple live SaaS platforms serving hundreds of active users.
         </p>
         <p>
-          I enjoy working in collaborative Agile environments and am eager to keep growing as a software engineer —
-          writing clean, scalable code that makes a real difference.
+          Passionate about problem-solving, clean code, and transforming real-world business challenges into efficient software solutions using React, Node.js, and PostgreSQL.
         </p>
         <br>
         <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
@@ -438,7 +452,7 @@
           <div class="info-icon icon-pink"><i class="fas fa-briefcase"></i></div>
           <div>
             <div class="info-label">Current Role</div>
-            <div class="info-value">Intern Software Engineer</div>
+            <div class="info-value">Lead Full Stack Engineer</div>
           </div>
         </div>
         <div class="info-card glass">
@@ -468,22 +482,12 @@
     </div>
     <div class="skills-grid reveal">
       <div class="skill-category glass">
-        <div class="skill-cat-title"><i class="fas fa-terminal" style="color:#a78bfa"></i> Languages</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">SQL</span>
-        </div>
-      </div>
-      <div class="skill-category glass">
         <div class="skill-cat-title"><i class="fas fa-desktop" style="color:#60a5fa"></i> Frontend</div>
         <div class="skill-tags">
           <span class="skill-tag">React.js</span>
-          <span class="skill-tag">Vue.js</span>
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">Vite</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Framer Motion</span>
         </div>
       </div>
       <div class="skill-category glass">
@@ -491,36 +495,34 @@
         <div class="skill-tags">
           <span class="skill-tag">Node.js</span>
           <span class="skill-tag">Express.js</span>
-          <span class="skill-tag">PHP Laravel</span>
-          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">RESTful APIs</span>
+          <span class="skill-tag">JWT Auth</span>
         </div>
       </div>
       <div class="skill-category glass">
         <div class="skill-cat-title"><i class="fas fa-database" style="color:#34d399"></i> Databases</div>
         <div class="skill-tags">
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">MongoDB</span>
           <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Prisma ORM</span>
         </div>
       </div>
       <div class="skill-category glass">
-        <div class="skill-cat-title"><i class="fab fa-aws" style="color:#fb923c"></i> Cloud & OS</div>
+        <div class="skill-cat-title"><i class="fab fa-aws" style="color:#fb923c"></i> Cloud & Deployment</div>
         <div class="skill-tags">
-          <span class="skill-tag">AWS EC2</span>
-          <span class="skill-tag">AWS S3</span>
-          <span class="skill-tag">Linux</span>
-        </div>
-      </div>
-      <div class="skill-category glass">
-        <div class="skill-cat-title"><i class="fas fa-tools" style="color:#c084fc"></i> Tools & Practices</div>
-        <div class="skill-tags">
+          <span class="skill-tag">AWS (EC2, S3)</span>
+          <span class="skill-tag">Linux VPS</span>
+          <span class="skill-tag">CI/CD</span>
           <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">Postman</span>
-          <span class="skill-tag">Agile/Scrum</span>
-          <span class="skill-tag">OOP</span>
-          <span class="skill-tag">Design Patterns</span>
+        </div>
+      </div>
+      <div class="skill-category glass">
+        <div class="skill-cat-title"><i class="fas fa-tools" style="color:#c084fc"></i> Practices</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Agile</span>
           <span class="skill-tag">Clean Code</span>
+          <span class="skill-tag">OOP</span>
         </div>
       </div>
     </div>
@@ -538,46 +540,62 @@
         <div class="project-header">
           <div class="project-icon">🎧</div>
           <div class="project-links">
-            <a href="https://djbooking.lk/" target="_blank" class="project-link" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://djbooking.lk" target="_blank" class="project-link" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
             <a href="https://github.com/" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <div class="project-title">DJ Booking Platform</div>
         <p class="project-desc">
-          Full-stack web platform connecting clients with DJs across Sri Lanka. DJs can create and manage profiles;
-          clients can search, filter by event type, and book DJs for weddings, parties, and corporate functions.
-          Centralized marketplace with scalable multi-user architecture.
+          Sri Lanka's leading DJ marketplace with 400+ verified artists and live user bookings. Ranked #1 on Google. Features advanced search filters, wallet & coin systems for profile boosts, automated SEO injection, and separate artist/user dashboards.
         </p>
         <div class="project-stack">
           <span class="stack-tag">React.js (Vite)</span>
           <span class="stack-tag">Node.js</span>
-          <span class="stack-tag">Express.js</span>
+          <span class="stack-tag">Express</span>
           <span class="stack-tag">PostgreSQL</span>
-          <span class="stack-tag">REST API</span>
-          <span class="stack-tag">Auth</span>
+          <span class="stack-tag">Prisma</span>
         </div>
       </div>
 
       <div class="project-card glass">
         <div class="project-header">
-          <div class="project-icon">🏢</div>
+          <div class="project-icon">📸</div>
           <div class="project-links">
+            <a href="https://photohire.lk/" target="_blank" class="project-link" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
             <a href="https://github.com/" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
-        <div class="project-title">Online Business Management System</div>
+        <div class="project-title">Photographer Booking Marketplace</div>
         <p class="project-desc">
-          Full-stack user management system with role-based access control and a microservices-inspired
-          modular architecture. Handles multiple business domains — expenses, orders, payments, and inventory —
-          via secure RESTful APIs.
+          A fully monetized platform connecting clients with photographers. Successfully processing premium verification badges. Features real-time chat, Google OAuth authentication, and specialized verification flows.
         </p>
         <div class="project-stack">
-          <span class="stack-tag">React</span>
+          <span class="stack-tag">Next.js</span>
+          <span class="stack-tag">Tailwind CSS</span>
           <span class="stack-tag">Node.js</span>
-          <span class="stack-tag">Express.js</span>
-          <span class="stack-tag">MySQL</span>
-          <span class="stack-tag">RBAC</span>
-          <span class="stack-tag">REST API</span>
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">Socket.io</span>
+        </div>
+      </div>
+
+      <div class="project-card glass">
+        <div class="project-header">
+          <div class="project-icon">✂️</div>
+          <div class="project-links">
+            <a href="https://salonbooking.lk/" target="_blank" class="project-link" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-title">Salon Booking & POS Platform</div>
+        <p class="project-desc">
+          A scalable multi-tenant SaaS application designed to streamline appointment scheduling and daily business operations for salons in Sri Lanka. Built-in Point of Sale (POS) system, real-time appointment management dashboard, and comprehensive daily sales reporting.
+        </p>
+        <div class="project-stack">
+          <span class="stack-tag">Next.js</span>
+          <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">Tailwind CSS</span>
+          <span class="stack-tag">PM2</span>
         </div>
       </div>
 
@@ -585,79 +603,81 @@
         <div class="project-header">
           <div class="project-icon">📱</div>
           <div class="project-links">
+            <a href="https://mobilezone.duckdns.org/" target="_blank" class="project-link" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
             <a href="https://github.com/" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <div class="project-title">Mobile Phone Shop Management System</div>
         <p class="project-desc">
-          Production-ready retail POS system with barcode-driven sales, real-time inventory control,
-          customer and supplier CRUD, discount handling, aggregated sales reports, and printable receipts
-          with ISO timestamps.
-        </p>
-        <div class="project-stack">
-          <span class="stack-tag">React</span>
-          <span class="stack-tag">Node.js</span>
-          <span class="stack-tag">Express.js</span>
-          <span class="stack-tag">MongoDB</span>
-          <span class="stack-tag">Barcode</span>
-          <span class="stack-tag">POS</span>
-        </div>
-      </div>
-
-      <div class="project-card glass">
-        <div class="project-header">
-          <div class="project-icon">🌍</div>
-          <div class="project-links">
-            <a href="https://go-ceylon-frontend.vercel.app/" target="_blank" class="project-link" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
-            <a href="https://github.com/" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        <div class="project-title">Tourism Web Application — Go Ceylon</div>
-        <p class="project-desc">
-          Web app for exploring Sri Lanka travel destinations with attraction-based tour guides,
-          an AI-powered chatbot for assistance, and RFID-based tour tracking. Administrators can
-          manage tour packages and bookings seamlessly.
+          Highly scalable, multi-tenant SaaS ERP platform designed to streamline POS, serialized inventory, and repair operations for mobile phone shops. Engineered strict tenant data isolation using PostgreSQL Row-Level Security (RLS) and advanced POS hardware integrations.
         </p>
         <div class="project-stack">
           <span class="stack-tag">React.js</span>
           <span class="stack-tag">Node.js</span>
           <span class="stack-tag">Express.js</span>
-          <span class="stack-tag">MongoDB</span>
-          <span class="stack-tag">RFID</span>
-          <span class="stack-tag">AI Chatbot</span>
-          <span class="stack-tag">MERN</span>
+          <span class="stack-tag">PostgreSQL (Sequelize)</span>
+          <span class="stack-tag">PM2</span>
+          <span class="stack-tag">Nginx</span>
+        </div>
+      </div>
+      
+      <div class="project-card glass">
+        <div class="project-header">
+          <div class="project-icon">🎵</div>
+          <div class="project-links">
+            <a href="https://devremixstore.com" target="_blank" class="project-link" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+            <a href="https://github.com/" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-title">Dev remix Store</div>
+        <p class="project-desc">
+          A digital storefront for music producers with in-browser audio playback and secure content delivery. Features OTP email verification, secure audio upload/validation, and admin management panel.
+        </p>
+        <div class="project-stack">
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Express</span>
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">Multer</span>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- CERTIFICATES -->
-  <section id="certificates">
+  <!-- EXPERIENCE -->
+  <section id="experience">
     <div class="reveal">
-      <div class="section-tag"><i class="fas fa-certificate"></i> Certifications</div>
-      <h2 class="section-title">My <span class="gradient-text">Certificates</span></h2>
+      <div class="section-tag"><i class="fas fa-briefcase"></i> Experience</div>
+      <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
     </div>
-    <div class="certs-grid reveal">
-      <div class="cert-card glass">
-        <div class="cert-icon">☕</div>
-        <div>
-          <div class="cert-name">Java (Basic)</div>
-          <div class="cert-issuer">HackerRank</div>
+    <div class="exp-grid reveal">
+      <div class="exp-card glass">
+        <div class="exp-header">
+          <div class="exp-title">Lead Full Stack Engineer</div>
+          <div class="exp-date">2024 &ndash; Present</div>
+        </div>
+        <div class="exp-company">Independent Consultant</div>
+        <div class="exp-desc">
+          <ul>
+            <li>Architected, developed, and deployed four scalable full-stack SaaS platforms from scratch (djbooking.lk, photohire.lk, devremixstore.com, salonbooking.lk).</li>
+            <li>Engineered a comprehensive Point of Sale (POS) system and real-time dashboard for salon owners, handling complex state management and business logic.</li>
+            <li>Designed robust database schemas (PostgreSQL), implemented secure authentication (OAuth, JWT, OTP), and integrated real-time chat features using Socket.io.</li>
+            <li>Successfully acquired and managed a live user base of over 500+ active professionals across multiple platforms.</li>
+            <li>Achieved #1 organic ranking on Google Search for target keywords through strategic Next.js SSR and SEO implementations, driving significant organic traffic.</li>
+          </ul>
         </div>
       </div>
-      <div class="cert-card glass">
-        <div class="cert-icon">🗄️</div>
-        <div>
-          <div class="cert-name">SQL (Intermediate)</div>
-          <div class="cert-issuer">HackerRank</div>
+      <div class="exp-card glass">
+        <div class="exp-header">
+          <div class="exp-title">Operations Lead & Product Owner</div>
+          <div class="exp-date">2023 &ndash; Present</div>
         </div>
-      </div>
-      <div class="cert-card glass">
-        <div class="cert-icon">🌐</div>
-        <div>
-          <div class="cert-name">Front End Web Development</div>
-          <div class="cert-issuer">University of Moratuwa (UOM)</div>
+        <div class="exp-company">Lux Flora Wedding Decors & DJ Services</div>
+        <div class="exp-desc">
+          <ul>
+            <li>Successfully managed and executed 100+ high-profile live events across Sri Lanka, overseeing end-to-end business operations and client relations.</li>
+            <li>Utilized deep domain expertise in the event industry to identify critical business inefficiencies, which directly led to the conceptualization and development of my current SaaS software solutions.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -672,7 +692,7 @@
     <div class="contact-wrapper reveal">
       <div class="contact-info">
         <p style="color:var(--text-muted); line-height:1.8; margin-bottom:0.5rem;">
-          I'm open to internship opportunities and exciting projects.
+          I'm open to freelance opportunities, consulting, and exciting projects.
           Whether you have a question or just want to say hi — feel free to reach out!
         </p>
         <a href="mailto:Sureshsenaka76@gmail.com" class="contact-item glass">
@@ -719,7 +739,7 @@
         </div>
         <div class="form-group">
           <label>Subject</label>
-          <input type="text" placeholder="Internship Opportunity" required />
+          <input type="text" placeholder="Business Inquiry" required />
         </div>
         <div class="form-group">
           <label>Message</label>
